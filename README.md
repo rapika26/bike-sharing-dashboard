@@ -1,17 +1,31 @@
 # Bike Sharing Dashboard 🚲
 
 ## Deskripsi
-Proyek ini bertujuan untuk menganalisis pola penyewaan sepeda menggunakan dataset Bike Sharing. Analisis dilakukan untuk mengetahui pengaruh waktu (jam) dan hari (hari kerja vs hari libur) terhadap jumlah penyewaan sepeda.
+Proyek ini bertujuan untuk menganalisis pola penyewaan sepeda berdasarkan waktu (jam) dan jenis hari (hari kerja vs hari libur) menggunakan dataset Bike Sharing.
 
 ---
 
 ## Setup Environment
 
-### 1. Install Python
-Pastikan Python sudah terinstall di komputer Anda.
+### 1. Membuat Virtual Environment (Opsional tapi Direkomendasikan)
 
-### 2. Install Library
-Jalankan perintah berikut pada CMD / Terminal:
+Buka CMD / Terminal:
+
+python -m venv venv
+
+Aktifkan virtual environment:
+
+Windows:
+venv\Scripts\activate
+
+Mac/Linux:
+source venv/bin/activate
+
+---
+
+### 2. Install Dependencies
+
+Install semua library yang dibutuhkan:
 
 pip install -r requirements.txt
 
@@ -23,9 +37,13 @@ Masuk ke folder project:
 
 cd submission
 
-Jalankan aplikasi Streamlit:
+Jalankan aplikasi:
 
-python -m streamlit run dashboard.py
+streamlit run dashboard/dashboard.py
+
+Jika terjadi error:
+
+python -m streamlit run dashboard/dashboard.py
 
 ---
 
@@ -33,31 +51,42 @@ python -m streamlit run dashboard.py
 
 submission/
 ├── dashboard/
-│   ├── main_data.csv
-│   └── dashboard.py
+│   ├── dashboard.py
+│   └── main_data.csv
 ├── data/
 │   ├── hour.csv
 │   └── day.csv
 ├── notebook.ipynb
-├── README.md
 ├── requirements.txt
+├── README.md
 └── url.txt
 
 ---
 
 ## Insight Analisis
 
-### 1. Berdasarkan Jam
-- Penyewaan sepeda meningkat pada jam sibuk, yaitu sekitar pukul 07.00–09.00 dan 16.00–18.00.
-- Pola ini menunjukkan aktivitas commuting (berangkat dan pulang kerja).
+### Berdasarkan Jam
+- Penyewaan tertinggi terjadi pada jam 07.00–09.00 dan 16.00–18.00.
+- Pola ini menunjukkan penggunaan sepeda sebagai transportasi kerja.
 
-### 2. Berdasarkan Hari
-- Hari kerja memiliki jumlah penyewaan yang lebih tinggi dibandingkan hari libur.
-- Hal ini menunjukkan sepeda lebih banyak digunakan untuk aktivitas rutin dibanding rekreasi.
+### Berdasarkan Hari
+- Hari kerja memiliki penyewaan lebih tinggi dibanding hari libur.
+- Hal ini menunjukkan penggunaan sepeda lebih dominan untuk aktivitas rutin.
 
 ---
 
 ## Dashboard
-Dashboard interaktif dibuat menggunakan Streamlit untuk memvisualisasikan:
-- Tren penyewaan berdasarkan jam
-- Perbandingan hari kerja vs hari libur
+Dashboard dibuat menggunakan Streamlit untuk memvisualisasikan:
+- Pola penyewaan berdasarkan jam
+- Perbandingan hari kerja dan hari libur
+
+---
+
+## URL Dashboard
+https://bike-sharing-dashboard-wdukgzee4dyryfrgdxxbfu.streamlit.app/
+
+---
+
+## Author
+Nama: [Rapika Dahlan]  
+Dicoding ID: [CDCC220D6X1867]
