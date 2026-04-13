@@ -27,10 +27,6 @@ Jalankan aplikasi Streamlit:
 
 python -m streamlit run dashboard.py
 
-Jika terjadi error, gunakan alternatif:
-
-python -m streamlit run dashboard/dashboard.py
-
 ---
 
 ## Struktur Direktori
