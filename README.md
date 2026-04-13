@@ -37,14 +37,14 @@ python -m streamlit run dashboard/dashboard.py
 
 submission/
 ├── dashboard/
-│   ├── dashboard.py
-│   └── main_data.csv
+│   ├── main_data.csv
+│   └── dashboard.py
 ├── data/
 │   ├── hour.csv
 │   └── day.csv
 ├── notebook.ipynb
-├── requirements.txt
 ├── README.md
+├── requirements.txt
 └── url.txt
 
 ---
