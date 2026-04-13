@@ -25,7 +25,7 @@ cd submission
 
 Jalankan aplikasi Streamlit:
 
-streamlit run dashboard/dashboard.py
+python -m streamlit run dashboard.py
 
 Jika terjadi error, gunakan alternatif:
 
